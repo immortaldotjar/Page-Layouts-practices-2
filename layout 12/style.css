@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 50, 0), rgb(145, 255, 0), rgb(0, 50, 0));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    flex-direction: column;
+    row-gap: 10px;
+    backdrop-filter: blur(100px);
+    padding: 20px;
+}
+
+.box div {
+    border-radius: 5px;
+}
+
+.header {
+    background-color: lightgreen;
+    height: 10%;
+    width: 100%;
+}
+
+.navigation {
+    background-color: lightgreen;
+    height: 10%;
+    width: 100%;
+}
+
+.body {
+    background-color: transparent;
+    height: 70%;
+    width: 100%;
+    column-gap: 10px;
+    
+}
+
+@media only screen and (max-width : 350px){
+    .body{
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: rgba(144, 238, 144, 0.356);
+        backdrop-filter: blur(100px);
+        padding: 10px;
+        transition: 1s;
+    }
+    body{
+        padding: 10px;
+    }
+    .box{
+        background-color: rgba(255, 255, 255, 0.075);
+        backdrop-filter: blur(100px);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+}
+
+.main {
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.tmain{
+    background-color: lightgreen;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+}
+.articlehead {
+    background-color: rgb(182, 250, 182);
+    height: 30%;
+    width: 100%;
+}
+
+.articlebody {
+    background-color: rgb(182, 250, 182);
+    height: 70%;
+    width: 100%;
+}
+
+.bmain{
+    background-color: lightgreen;
+    height: 30%;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: transparent;
+    height: 100%;
+    width: 30%;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.top {
+    background-color: transparent;
+    height: 40%;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.section{
+    background-color: lightgreen;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.bottom {
+    background-color: lightgreen;
+    height: 60%;
+    width: 100%;
+}
+
+.footer {
+    background-color: lightgreen;
+    height: 10%;
+    width: 100%;
+}
+
